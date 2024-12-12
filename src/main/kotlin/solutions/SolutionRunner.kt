@@ -19,13 +19,25 @@ object SolutionRunner {
             else -> {
                 when (part) {
                     Part.PART_1 -> {
+                        val startTime = System.nanoTime()
+
                         val ans = solution.part_1(input)
+
+                        val endTime = System.nanoTime()
+                        val duration = endTime - startTime
                         println("Part 1 for day $day is $ans")
+                        println("Execution time: ${duration / 1_000_000} ms")
                     }
 
                     Part.PART_2 -> {
+                        val startTime = System.nanoTime()
+
                         val ans = solution.part_2(input)
+
+                        val endTime = System.nanoTime()
+                        val duration = endTime - startTime
                         println("Part 2 for day $day is $ans")
+                        println("Execution time: ${duration / 1_000_000} ms")
                     }
                 }
             }

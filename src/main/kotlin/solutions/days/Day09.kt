@@ -1,7 +1,6 @@
 package com.github.ratneshjain40.solutions.days
 
 import com.github.ratneshjain40.solutions.framework.Solution
-import kotlin.math.abs
 
 class Day09 : Solution() {
     private fun parseInput(input: String): ArrayList<Long> {

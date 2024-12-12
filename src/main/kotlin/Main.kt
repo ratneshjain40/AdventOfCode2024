@@ -5,6 +5,7 @@ import com.github.ratneshjain40.solutions.SolutionRunner
 
 fun main() {
     println("Hello World, this is Kotlin Advent of Code 2024")
-    SolutionRunner.runSolution(10, Part.PART_2, test = false);
+    SolutionRunner.runSolution(11, Part.PART_1, test = false);
+    SolutionRunner.runSolution(11, Part.PART_2, test = false);
 }
 
