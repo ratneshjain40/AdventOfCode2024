@@ -24,6 +24,7 @@ object SolutionProvider {
         addSolution(10, Day10());
         addSolution(11, Day11());
         addSolution(12, Day12());
+        addSolution(13, Day13());
     }
 
     private fun addSolution(day: Int, solution: Solution) {
