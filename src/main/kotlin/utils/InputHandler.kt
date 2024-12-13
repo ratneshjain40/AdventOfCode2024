@@ -1,10 +1,11 @@
 package com.github.ratneshjain40.utils
 
+import io.github.cdimascio.dotenv.dotenv
 import kotlinx.coroutines.runBlocking
 import java.io.File
 
 // Constants
-private const val DATA_DIR = "D:\\Projects\\Sandbox\\AdventOfCode\\AdventOfCode2024\\data\\"
+private val DATA_DIR = dotenv()["DATA_DIR"]
 
 // Input handler class to manage input fetching and retrieval
 object InputHandler {
