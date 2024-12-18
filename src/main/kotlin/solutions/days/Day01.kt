@@ -17,7 +17,7 @@ class Day01 : Solution() {
         return arrayListOf(arr1, arr2)
     }
 
-    override fun part_1(input: String): Int {
+    override fun part_1(input: String, test: Boolean): Int {
         val arrPair = parseInput(input);
         val (arr1, arr2) = arrPair;
         arr1.sort();
@@ -31,7 +31,7 @@ class Day01 : Solution() {
         return sum;
     }
 
-    override fun part_2(input: String): Int {
+    override fun part_2(input: String, test: Boolean): Int {
         val arrPair = parseInput(input);
         val (arr1, arr2) = arrPair;
 

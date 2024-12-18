@@ -68,12 +68,12 @@ class Day03 : Solution() {
         return arr
     }
 
-    override fun part_1(input: String): Int {
+    override fun part_1(input: String, test: Boolean): Int {
         val data = parseInput(input);
         return data.sumOf { it[0] * it[1] }
     }
 
-    override fun part_2(input: String): Int {
+    override fun part_2(input: String, test: Boolean): Int {
         val data = parseInputPart2(input);
         return data.sumOf { it[0] * it[1] }
     }

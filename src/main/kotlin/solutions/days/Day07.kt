@@ -59,13 +59,13 @@ class Day07 : Solution() {
         return eval1 || eval2 || eval3
     }
 
-    override fun part_1(input: String): Long {
+    override fun part_1(input: String, test: Boolean): Long {
         val parsedInput = parseInput(input)
         val matches = parsedInput.filter { evaluate1(it.first, it.second[0], it.second, 1) }.map { it.first }.sum()
         return matches;
     }
 
-    override fun part_2(input: String): Long {
+    override fun part_2(input: String, test: Boolean): Long {
         val parsedInput = parseInput(input)
         val matches = parsedInput.filter { evaluate2(it.first, it.second[0], it.second, 1) }.map { it.first }.sum()
         return matches;

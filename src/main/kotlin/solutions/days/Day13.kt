@@ -1,7 +1,6 @@
 package com.github.ratneshjain40.solutions.days
 
 import com.github.ratneshjain40.solutions.framework.Solution
-import java.math.BigDecimal
 
 class Day13 : Solution() {
     data class Coordinates(var x: Long, var y: Long)
@@ -37,7 +36,7 @@ class Day13 : Solution() {
     }
 
 
-    override fun part_1(input: String): Number {
+    override fun part_1(input: String, test: Boolean): Number {
         val buttonInfoList = parseInput(input)
         var sum = 0;
         buttonInfoList.forEach { buttonInfo ->
@@ -52,7 +51,7 @@ class Day13 : Solution() {
         return sum
     }
 
-    override fun part_2(input: String): Number {
+    override fun part_2(input: String, test: Boolean): Number {
         val buttonInfoList = parseInput(input)
         var sum = 0L;
         buttonInfoList.forEach { buttonInfo ->

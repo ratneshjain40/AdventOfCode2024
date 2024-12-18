@@ -80,7 +80,7 @@ class Day09 : Solution() {
         }
     }
 
-    override fun part_1(input: String): Number {
+    override fun part_1(input: String, test: Boolean): Number {
         val numbers = parseInput(input)
         val arr = ArrayList<Int>()
         var isFile = true;
@@ -118,7 +118,7 @@ class Day09 : Solution() {
         return sum
     }
 
-    override fun part_2(input: String): Number {
+    override fun part_2(input: String, test: Boolean): Number {
         val numbers = parseInput(input)
         val arr = ArrayList<Int>()
         var isFile = true;

@@ -41,7 +41,7 @@ class Day08 : Solution() {
     }
 
 
-    override fun part_1(input: String): Number {
+    override fun part_1(input: String, test: Boolean): Number {
         val data = parseInput(input)
         val xSize = data.size;
         val ySize = data[0].size;
@@ -61,7 +61,7 @@ class Day08 : Solution() {
         return nodes.size
     }
 
-    override fun part_2(input: String): Number {
+    override fun part_2(input: String, test: Boolean): Number {
         val data = parseInput(input)
         val xSize = data.size;
         val ySize = data[0].size;

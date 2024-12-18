@@ -34,7 +34,7 @@ class Day05: Solution() {
         return Pair(hashSet, arr)
     }
 
-    override fun part_1(input: String): Int {
+    override fun part_1(input: String, test: Boolean): Int {
         val data = parseInput(input)
         var sum = 0;
         for (pages in data.second) {
@@ -47,7 +47,7 @@ class Day05: Solution() {
         return sum;
     }
 
-    override fun part_2(input: String): Int {
+    override fun part_2(input: String, test: Boolean): Int {
         val data = parseInput(input)
         var sum = 0;
         for (pages in data.second) {

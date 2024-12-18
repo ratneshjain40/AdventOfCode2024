@@ -55,7 +55,7 @@ class Day10: Solution() {
         return arr
     }
 
-    override fun part_1(input: String): Number {
+    override fun part_1(input: String, test: Boolean): Number {
         val data = parseInput(input)
         var score = HashMap<Point, HashSet<Point>>()
         for (x in 0..<data.size) {
@@ -93,7 +93,7 @@ class Day10: Solution() {
         return count;
     }
 
-    override fun part_2(input: String): Number {
+    override fun part_2(input: String, test: Boolean): Number {
         val data = parseInput(input)
         var score = 0;
         for (x in 0..<data.size) {

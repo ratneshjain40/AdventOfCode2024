@@ -104,7 +104,7 @@ class Day06 : Solution() {
         return arr
     }
 
-    override fun part_1(input: String): Int {
+    override fun part_1(input: String, test: Boolean): Int {
         val data = parseInput(input);
         var startPoint: Point = Point(0, 0);
         val xSize = data.size;
@@ -127,7 +127,7 @@ class Day06 : Solution() {
         return steps.count();
     }
 
-    override fun part_2(input: String): Int {
+    override fun part_2(input: String, test: Boolean): Int {
         val data = parseInput(input);
         var startPoint: Point = Point(0, 0);
 

@@ -52,7 +52,7 @@ class Day04 : Solution() {
         return arr
     }
 
-    override fun part_1(input: String): Int {
+    override fun part_1(input: String, test: Boolean): Int {
         val data = parseInput(input);
         var count = 0;
         for (i in 0 until data.size) {
@@ -75,7 +75,7 @@ class Day04 : Solution() {
         return count;
     }
 
-    override fun part_2(input: String): Int {
+    override fun part_2(input: String, test: Boolean): Int {
         val data = parseInput(input);
         var count = 0;
         val xSize = data[0].size;

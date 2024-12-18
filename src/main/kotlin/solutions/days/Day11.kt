@@ -1,10 +1,6 @@
 package com.github.ratneshjain40.solutions.days
 
 import com.github.ratneshjain40.solutions.framework.Solution
-import com.github.ratneshjain40.utils.InputHandler
-import kotlinx.coroutines.joinAll
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 
 class Day11 : Solution() {
 
@@ -57,7 +53,7 @@ class Day11 : Solution() {
     // Global memoized instance
     val scoreStonesMemoized = memoizeScoreStones()
 
-    override fun part_1(input: String): Number {
+    override fun part_1(input: String, test: Boolean): Number {
         val stones = parseInput(input)
         return scoreStonesMemoized(stones.map { it.toInt() }.toList() as ArrayList<Long>, 25)
     }
@@ -81,7 +77,7 @@ class Day11 : Solution() {
         return map
     }
 
-    override fun part_2(input: String): Number {
+    override fun part_2(input: String, test: Boolean): Number {
         val stones = parseInput(input)
         var uniqueStones = HashMap<Long, Long>()
         stones.forEach { uniqueStones[it] = 1 }

@@ -49,13 +49,13 @@ class Day02 : Solution() {
         return false;
     }
     
-    override fun part_1(input: String): Int {
+    override fun part_1(input: String, test: Boolean): Int {
         val data = parseInput(input);
         val safeCount = data.count { checkArray(it) }
         return safeCount;
     }
 
-    override fun part_2(input: String): Int {
+    override fun part_2(input: String, test: Boolean): Int {
         val data = parseInput(input);
         val safeCount = data.count { checkArray(it) || skipOneAndCheck(it) }
         return safeCount;
